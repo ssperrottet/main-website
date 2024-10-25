@@ -7,8 +7,5 @@ This is my personal portfolio website, where I showcase my projects, skills, and
 - **About Me**: Learn about my background, skills, and areas of expertise.
 - **Contact Information**: Get in touch with me through my provided contact links.
 
-## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript
-- **Framework**: React (or specify your framework if you're using one)
-- **Backend**: Node.js (if applicable)
-- **Deployment**: Deployed using (Netlify, GitHub Pages, or your chosen platform)
+
+- **Deployment**: Deployed at https://samuelperrottet.com
