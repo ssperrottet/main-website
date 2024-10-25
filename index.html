@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Samuel Perrottet</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+		/>
+
+		<!-- HOSTED -->
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="fonts/mdi/css/materialdesignicons.min.css"
+			media="all"
+			rel="stylesheet"
+		/>
+
+		<!-- LOCAL -->
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<!-- HOSTED -->
+		<script
+			src="https://kit.fontawesome.com/871cfb7601.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+		<!-- LOCAL -->
+		<script src="scripts/pt.min.js"></script>
+		<script src="scripts/index.js"></script>
+		<script src="scripts/modal.js"></script>
+	</head>
+
+	<body>
+		<div class="overflow-wrap">
+			<!-- HOME -->
+			<div class="modal-wrap flex">
+				<div class="mask"></div>
+				<div class="modal" id="modal">
+					<div class="carousel-wrap">
+						<div class="window">
+							<div id="carousel">
+								<div class="slide"></div>
+								<div class="slide"></div>
+								<div class="slide"></div>
+							</div>
+							<i class="mdi mdi-chevron-left" id="prev"></i>
+							<i class="mdi mdi-chevron-right" id="next"></i>
+						</div>
+					</div>
+					<div class="info-box">
+						<div class="title"></div>
+						<div class="tag"></div>
+						<div class="detail"></div>
+						<a href="#" target="_blank">
+							<div class="button">
+								<i class="mdi mdi-open-in-new"></i>VIEW SITE
+							</div>
+						</a>
+					</div>
+					<i class="close mdi mdi-close"></i>
+				</div>
+			</div>
+
+			<section id="home" class="flex height-fix">
+				<div id="pt" class="canvas"></div>
+				<div class="flex">
+					<div class="text">
+						<div>
+							<div>
+								<img
+									id="profile_pic"
+									src="img/profile.png"
+									width="250"
+									style="
+										border: 8px solid white;
+										margin: auto;
+										border-radius: 50%;
+									"
+									alt=""
+								/>
+							</div>
+							<h1
+								style="
+									font-size: 4rem;
+									margin-bottom: 10px;
+									line-height: normal;
+								"
+							>
+								Samuel Perrottet
+							</h1>
+							<em>
+								Computer Science<br />
+								Stony Brook University 2026<br />High Performance Computing
+								Assistant
+								<br />
+							</em>
+						</div>
+					</div>
+
+					<div class="button page-link" dest="about">
+						View my work <i class="mdi mdi-arrow-right"></i>
+					</div>
+
+					<nav class="flex">
+						<div class="link-wrap">
+							<div class="active page-link" dest="home">home</div>
+							<div class="page-link" dest="about">about</div>
+							<div class="page-link" dest="projects">projects</div>
+							<div class="page-link" dest="skills">skills</div>
+							<div class="page-link" dest="contact">contact</div>
+							<div class="resume-link">
+								<a
+									href="Samuel_Perrottet_Resume.pdf"
+									style="text-decoration: none; color: inherit"
+									>Resume</a
+								>
+							</div>
+						</div>
+
+						<i class="mdi mdi-menu"></i>
+					</nav>
+				</div>
+			</section>
+
+			<!-- ABOUT -->
+			<section id="about">
+				<div class="container flex">
+					<div class="header waypoint" data-animation="slide-in-left">
+						ABOUT
+					</div>
+					<div
+						style="margin-bottom: 4rem"
+						class="header-bar waypoint"
+						data-animation="slide-in-left"
+						data-delay=".5s"
+					></div>
+				</div>
+
+				<div
+					class="skills-wrapper flex row-gt-sm"
+					style="
+						width: 70%;
+						margin-top: 0px;
+						margin-left: auto;
+						margin-right: auto;
+					"
+				>
+					<div
+						class="flex flex-50-gt-sm waypoint"
+						style="width: 100%; padding: 0pt"
+						data-animation="slide-in-left"
+					>
+						<div
+							class="col-sm-12 col-lg-4"
+							style="padding: 2rem; padding-top: 0px"
+						>
+							<div class="team-member" style="margin-bottom: 0px">
+								<img
+									src="img/profile-2.png"
+									style="
+										margin: 8px solid white;
+										width: 350px !important;
+										height: 100%;
+									"
+									class="img-responsive img-circle"
+									alt="Samuel Perrottet"
+								/>
+								<div id="social1" class="mt-4">
+									<ul
+										class="list-inline social-buttons"
+										style="text-align: center"
+									>
+										<li class="text-center">
+											<a
+												href="https://www.linkedin.com/in/samuel-perrottet/"
+												target="blank"
+												><i class="mdi mdi-linkedin"></i
+											></a>
+										</li>
+										<li class="text-center">
+											<a href="https://github.com/ssperrottet" target="blank"
+												><i class="mdi mdi-github-circle"></i
+											></a>
+										</li>
+										<li class="text-center">
+											<a
+												href="https://stackoverflow.com/users/22451691/samuel-perrottet"
+												target="blank"
+												><i class="mdi mdi-stackoverflow"></i
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="flex flex-10-gt-sm waypoint bars-wrap"
+						style="width: 100%; padding: 0pt; margin-top: 0%"
+						data-animation="slide-in-right"
+					>
+						<div
+							class="col-sm-12 col-lg-8"
+							id="intro-section"
+							style="
+								padding: 1rem;
+								text-align: left;
+								margin-bottom: 1rem;
+								margin-top: 1rem;
+							"
+						>
+							<h4
+								style="
+									color: black !important;
+									text-align: left;
+									box-sizing: border-box;
+									margin-top: 0;
+									margin-bottom: 0.5rem;
+									line-height: 1.2;
+									color: inherit;
+									font-size: 1.5rem;
+									font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial,
+										sans-serif;
+									font-weight: 700;
+								"
+							>
+								Samuel Perrottet
+							</h4>
+							<p class="lead">
+								<b
+									>Computer Science Major | HPC Assistant | Resident
+									Assistant</b
+								>
+							</p>
+							<p class="lead">
+								As a dedicated undergraduate at Stony Brook University, I am
+								passionate about technology and its power to transform our
+								world. My journey in this dynamic field is fueled by a love for
+								creating. From building high-performance websites to designing
+								engaging video games, I enjoy bringing my ideas to life.
+							</p>
+							<p class="lead">
+								I am currently pursuing a BS in Computer Science, with the goal
+								of graduating a year early in May 2026. Alongside my academic
+								studies, I work as an HPC Assistant for the SeaWulf Computing
+								Cluster, where I collaborate with researchers at the forefront
+								of innovation. Additionally, as a Resident Assistant for
+								Toscanini Hall, I take pride in helping create an unforgettable
+								college experience for my fellow students.
+							</p>
+							<p class="lead">Feel free to reach out and connect!</p>
+
+							<!--<br/>A general design goal of mine is to automate a process with as little user input as possible.</p>-->
+							<div id="social2" class="mt-4" style="text-align: center">
+								<ul class="list-inline social-buttons text-center">
+									<li>
+										<a
+											href="https://www.linkedin.com/in/samuel-perrottet/"
+											target="blank"
+											><i class="mdi mdi-linkedin"></i
+										></a>
+									</li>
+									<li>
+										<a href="https://github.com/ssperrottet" target="blank"
+											><i class="mdi mdi-github-circle"></i
+										></a>
+									</li>
+									<li>
+										<a
+											href="https://stackoverflow.com/users/22451691/samuel-perrottet"
+											target="blank"
+											><i class="mdi mdi-stackoverflow"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- projects -->
+			<section class="flex" id="projects">
+				<div class="header waypoint" data-animation="slide-in-right">
+					PROJECTS
+				</div>
+				<div
+					class="header-bar waypoint"
+					data-animation="slide-in-right"
+					data-delay=".3s"
+				></div>
+
+				<div class="filter-wrap waypoint" data-animation="fade-in">
+					<div class="flex row">
+						<div class="filter" data-filter="all"></div>
+					</div>
+				</div>
+
+				<div id="gallery" class="container flex row wrap waypoint">
+					<div class="mix js" data-my-order="1">
+						<div>
+							<div class="card"></div>
+							<div class="text">
+								<div class="bold">Finance</div>
+								<span class="highlight">Python (Flask)</span>
+							</div>
+							<div class="button" id="finance">LEARN MORE</div>
+						</div>
+					</div>
+
+					<div class="mix js" data-my-order="1">
+						<div>
+							<div class="card"></div>
+							<div class="text">
+								<div class="bold">Minesweeper Reborn</div>
+								<span class="highlight">JavaScript (p5.js)</span>
+							</div>
+							<div class="button" id="minesweeper">LEARN MORE</div>
+						</div>
+					</div>
+
+					<div class="mix js" data-my-order="1">
+						<!--
+            <div>
+							<div class="card"></div>
+							<div class="text">
+								<div class="bold">Calorie Crafter</div>
+								<span class="highlight">C# (ASP.NET MVC)</span>
+							</div>
+							<div class="button" id="newrelic">LEARN MORE</div>
+						</div>
+          --></div>
+
+					<div class="mix js" data-my-order="1">
+						<div>
+							<div class="card"></div>
+							<div class="text">
+								<div class="bold">Zombicide</div>
+								<span class="highlight">JavaScript (p5.js)</span>
+							</div>
+							<div class="button" id="zombie">LEARN MORE</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="card"></div>
+						<div class="text">
+							<div class="bold">The Mall</div>
+							<span class="highlight">React.js / Node</span>
+						</div>
+						<div class="button" id="themall">LEARN MORE</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- skills -->
+			<section id="skills">
+				<div class="container flex">
+					<div class="header waypoint" data-animation="slide-in-right">
+						SKILLS
+					</div>
+					<div
+						class="header-bar waypoint"
+						data-animation="slide-in-right"
+						data-delay=".3s"
+					></div>
+
+					<div id="gallery" class="container flex row wrap waypoint">
+						<div class="mix react" data-my-order="1">
+							<div>
+								<div class="card">
+									<i
+										class="mdi mdi-language-csharp"
+										style="padding-top: 19px"
+									></i>
+								</div>
+								<div class="text">
+									<div class="bold">C#</div>
+									I have worked extensively with C#. As a Junior Dev with SBU,
+									we are constantly maintaining and improving numerous .NET
+									projects and applications.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix react" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-brands fa-java" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">Java</div>
+									I am very comfortable coding in Java. I've spent the last few
+									months learning the language through an object oriented
+									programming course at SBU.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix react" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-brands fa-python" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">Python</div>
+									Python is consistently my language of choice when it comes to
+									back-end development. I have found it to be extremely useful
+									for coding competitions.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix js" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-solid fa-database" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">SQL + noSQL</div>
+									I am quite experienced with both relational and non-relational
+									databases. I have worked with mySQL and MongoDB throughout my
+									projects.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix rails" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-solid fa-code" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">JavaScript, HTML, CSS</div>
+									As a full-stack dev, I take pride in my abilities to tackle
+									both back-end and front-end development. Thus, I embrace any
+									opportunity to work with HTML, CSS, and JavaScript.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix js" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-brands fa-node-js" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">NodeJS</div>
+									While I haven't worked with NodeJS as much recently, I have
+									found it to be an extremely powerful environment which I
+									deeply enjoy exploring.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix js" data-my-order="1">
+							<div>
+								<div class="card">
+									<i
+										class="fa-solid fa-code-branch"
+										style="padding-top: 19px"
+									></i>
+								</div>
+								<div class="text">
+									<div class="bold">Source Control</div>
+									I am a strong believer in proper source control practices,
+									especially for larger projects, as it
+									enhances collaboration and ensures a seamless workflow.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix rails" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-brands fa-jira" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">JIRA Tracking</div>
+									Our development workflow has often revolved around the JIRA
+									ticketing system. Assigning tasks helps ensure a productive
+									workflow with proper documentation.
+								</div>
+							</div>
+						</div>
+
+						<div class="mix js" data-my-order="1">
+							<div>
+								<div class="card">
+									<i class="fa-brands fa-angular" style="padding-top: 19px"></i>
+								</div>
+								<div class="text">
+									<div class="bold">Angular</div>
+									My time with Angular has so far been brief, but I am learning
+									more each day. It is proving a very valuable tool to bring my
+									ideas to life.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<svg
+					preserveAspectRatio="none"
+					viewBox="0 0 100 102"
+					height="75"
+					width="100%"
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					class="svgcolor-light"
+				>
+					<path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+				</svg>
+				<div class="container flex">
+					<div class="header waypoint" data-animation="slide-in-left">
+						CONTACT
+					</div>
+					<div
+						class="header-bar waypoint"
+						data-animation="slide-in-right"
+						data-delay=".25s"
+					></div>
+					<div
+						class="highlight waypoint"
+						data-animation="slide-in-right"
+						data-delay=".5s"
+					>
+						Don't hesitate to reach out!
+					</div>
+					<form
+						class="waypoint"
+						data-animation="pop-in"
+						data-delay=".5s"
+						id="contact-form"
+					>
+						<input
+							placeholder="Name"
+							style="font-family: 'Arial'"
+							type="text"
+							name="name"
+							required
+						/>
+						<input
+							placeholder="Enter email"
+							style="font-family: 'Arial'"
+							type="email"
+							name="email"
+							required
+						/>
+						<textarea
+							placeholder="Your Message"
+							style="font-family: 'Arial'"
+							type="text"
+							name="message"
+						></textarea>
+						<div id="success">
+							<div>
+								Your message was sent successfully. Thanks!<span
+									id="close"
+									class="mdi mdi-close"
+								></span>
+							</div>
+						</div>
+						<input class="button" type="submit" id="submit" value="SUBMIT" />
+					</form>
+				</div>
+			</section>
+
+			<footer>
+				<i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+				<div class="icon-wrap flex row">
+					<a href="https://www.linkedin.com/in/samuel-perrottet/">
+						<div class="flex icon" id="icon-2">
+							<i class="mdi mdi-linkedin"></i>
+						</div>
+					</a>
+					<a href="https://github.com/ssperrottet">
+						<div class="flex icon" id="icon-3">
+							<i class="mdi mdi-github-box"></i>
+						</div>
+					</a>
+					<!--
+          <a href="https://www.instagram.com/samuelperrottet/">
+            <div class="flex icon" id="icon-4">
+              <i class="mdi mdi-instagram"></i>
+            </div>
+          </a>
+          -->
+
+					<a href="https://stackoverflow.com/users/22451691/samuel-perrottet">
+						<div class="flex icon" id="icon-5">
+							<i class="mdi mdi-stackoverflow"></i>
+						</div>
+					</a>
+				</div>
+			</footer>
+		</div>
+
+		<div id="preload">
+			<img src="img/filler.jpg" />
+			<img src="img/thumb-1.jpg" />
+			<img src="img/thumb-2.jpg" />
+			<img src="img/thumb-3.jpg" />
+			<img src="img/thumb-4.jpg" />
+			<img src="img/thumb-5.jpg" />
+			<img src="img/thumb-6.jpg" />
+			<img src="img/skills-1.jpg" />
+			<img src="img/skills-2.jpg" />
+			<img src="img/skills-3.jpg" />
+			<img src="img/skills-4.jpg" />
+
+			<img src="img/slides/finance-0.jpg" />
+			<img src="img/slides/finance-1.jpg" />
+			<img src="img/slides/finance-2.jpg" />
+
+			<img src="img/slides/minesweeper-0.jpg" />
+			<img src="img/slides/minesweeper-1.jpg" />
+			<img src="img/slides/minesweeper-2.jpg" />
+
+			<img src="img/slides/zombie-0.jpg" />
+			<img src="img/slides/zombie-1.jpg" />
+			<img src="img/slides/zombie-2.jpg" />
+
+			<img src="img/slides/newrelic-0.jpg" />
+			<img src="img/slides/newrelic-1.jpg" />
+			<img src="img/slides/newrelic-2.jpg" />
+			<img src="img/slides/mystand-0.jpg" />
+			<img src="img/slides/mystand-1.jpg" />
+			<img src="img/slides/mystand-2.jpg" />
+			<img src="img/slides/never-0.jpg" />
+			<img src="img/slides/never-1.jpg" />
+			<img src="img/slides/never-2.jpg" />
+			<img src="img/slides/powur-0.jpg" />
+			<img src="img/slides/powur-1.jpg" />
+			<img src="img/slides/powur-2.jpg" />
+
+			<img src="img/slides/themall-0.jpg" />
+			<img src="img/slides/themall-1.jpg" />
+			<img src="img/slides/themall-2.jpg" />
+			<img src="img/slides/walker-0.jpg" />
+			<img src="img/slides/walker-1.jpg" />
+			<img src="img/slides/walker-2.jpg" />
+		</div>
+	</body>
+</html>
+
+<script src="scripts/canvas.js"></script>
